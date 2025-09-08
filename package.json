@@ -1,14 +1,13 @@
 {
-  "name": "iso-3166-1-alpha-2",
-  "version": "1.0.2",
+  "name": "@positivegrid/iso-3166-1-alpha-2",
+  "version": "1.0.0",
   "description": "Simple module providing ISO-3166-1-alpha-2 country code to english country name lookup and reverse lookup",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build:coffee && npm run build:ts",
+    "build": "npm run build:coffee",
     "build:coffee": "coffee --compile --output . index.coffee",
-    "build:ts": "tsc --outDir dist --declaration --declarationMap --sourceMap src/countries-data.ts",
-    "clean": "rm -rf dist && mkdir dist",
+    "clean": "rm -f index.js",
     "prebuild": "npm run clean",
     "prepare": "npm run build",
     "prepack": "npm run build",
@@ -27,6 +26,9 @@
     "countries",
     "name"
   ],
+  "files": [
+    "index.js"
+  ],
   "author": "Georg Zoeller",
   "license": "MIT",
   "dependencies": {
@@ -34,7 +36,6 @@
   },
   "devDependencies": {
     "coffeescript": "^2.7.0",
-    "typescript": "^5.0.0",
     "docco": "^0.9.1"
   },
   "homepage": "https://github.com/georgzoeller/iso-3166-1-alpha-2",
