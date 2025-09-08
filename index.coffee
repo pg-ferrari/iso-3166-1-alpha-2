@@ -276,7 +276,7 @@ class Iso31661a2
         VE: "Venezuela, Bolivarian Republic of"
         VN: "Viet Nam"
         VG: "Virgin Islands, British"
-        VI: "Virgin Islands, United States”"
+        VI: "Virgin Islands, United States"
         WF: "Wallis and Futuna"
         EH: "Western Sahara"
         YE: "Yemen"
